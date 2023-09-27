@@ -1,0 +1,12 @@
+<form>
+    <label for="fname">First number:</label>
+    <input type ="text" value="{{firstValue}}" #first>
+    <label for="fname">Second number:</label>
+    <input type ="text" value="{{secondValue}}" #second>
+    <label for="fname">Result:</label>
+    <input type ="text" value="{{resValue}}" #result>
+</form>
+<button type="button" (click)="add(first.value, second.value)">+</button>
+<button type="button" (click)="sub(first.value, second.value)">-</button>
+<button type="button" (click)="div(first.value, second.value)">/</button>
+<button type="button" (click)="mul(first.value, second.value)">*</button>
